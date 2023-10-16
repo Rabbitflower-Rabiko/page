@@ -10,7 +10,7 @@ There are a lot of risks involved in becoming a real rabbit owner, but just havi
 --------------------------  
 <br>
 **Some NFTs on sale**
-![NFT一覧](./001.jpg)  
+![NFT一覧](./1.jpg)  
 **[RabbitflowerNFT](https://lit.link/rabihouse){:target="_blank"}**
 
 Currently, I am using my favorite rabbit as a character called ♥Rabiko♥ and I am flying around SNS as a partner.

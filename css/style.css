@@ -487,7 +487,7 @@ dl.line dd {
 #footermenu .title {
 	font-weight: bold;		/*太字にする*/
 	color: #da536e;			/*文字色*/
-	padding-bottom: 5px;	/*下に空けるスペース*/
+	padding-bottom: 3px;	/*下に空けるスペース*/
 }
 
 
@@ -803,10 +803,10 @@ header {
 /*メニューブロック*/
 #menubar {
 	position: fixed;overflow: auto;z-index: 100;
-	left: 0px;top: 0px;
-	width: 100%;
+	left: 00px;top: 0px;
+	width: 70%;
 	height: 100%;
-	padding: 100px 20px 20px;			/*ブロック内の余白。上、左右、下。*/
+	padding: 30x 10px 10px;			/*ブロック内の余白。上、左右、下。*/
 	background: rgba(0,0,0,0.9);		/*背景色。0,0,0は黒の事で0.9は色が90%出た状態。*/
 	text-align: center;					/*内容をセンタリング*/
 	animation: animation1 0.2s both;	/*animation.cssのanimation1を実行する。0.2sは0.2秒の事。*/
@@ -826,7 +826,7 @@ header {
 /*メニュー１個あたりの設定*/
 #menubar a {
 	color: inherit;
-	padding: 10px;		/*メニュー内の余白*/
+	padding: 7px;		/*メニュー内の余白*/
 }
 
 

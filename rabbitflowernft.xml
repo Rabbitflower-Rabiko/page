@@ -1,71 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./web3.rabbitflowerdiary.com"?>
 <rdf:RDF
   xmlns="http://purl.org/rss/1.0/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:admin="http://webns.net/mvcb/"
   xml:lang="ja">
-  <channel rdf:about="http://rabbitflower.html.xdomain.jp/xml/rabbitflowernft_xml.xml">
+  <channel rdf:about="http://web3.rabbitflowerdiary.com/xml/rabbitflowernft.xml">
     <title>RabbitflowerDiaryNFT</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
-    <dc:date>2023-10-12T18:10:17+09:00</dc:date>
+    <link>http://web3.rabbitflowerdiary.com/</link>
+    <dc:date>2023-10-19T11:24:59+09:00</dc:date>
     <description>個人でNFT販売をしております</description>
     <admin:generatorAgent rdf:resource="http://www.infomaker.jp/editorlite/?v=0.93" />
-    <image rdf:resource="http://rabbitflower.html.xdomain.jp/images/logo.png"/>
+    <image rdf:resource="http://web3.rabbitflowerdiary.com/images/logo.png"/>
     <items>
       <rdf:Seq>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20231012"/>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20231001"/>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20230928"/>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20230924"/>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20230924"/>
-        <rdf:li rdf:resource="http://rabbitflower.html.xdomain.jp/index.html#he20230924"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home/index.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/dearfriend.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/xrpcafe.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/hexa_rf.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/hexa_rabiko.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/comsa.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rarible.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/opensea.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/objkt.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/mynft.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20231012"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20231001"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230928"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
       </rdf:Seq>
     </items>
   </channel>
-  <image rdf:about="http://rabbitflower.html.xdomain.jp/images/logo.png">
+  <image rdf:about="http://web3.rabbitflowerdiary.com/images/logo.png">
     <title>RabbitflowerDiaryNFT</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
-    <url>http://rabbitflower.html.xdomain.jp/images/logo.png</url>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
+    <url>http://web3.rabbitflowerdiary.com/images/logo.png</url>
   </image>
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20231012">
+  <item rdf:about="http://web3.rabbitflowerdiary.com/home/index.html#he20231019">
+    <title>MYpage</title>
+    <link>http://web3.rabbitflowerdiary.com/home/index.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/dearfriend.html#he20231019">
+    <title>dearfriend</title>
+    <link>http://web3.rabbitflowerdiary.com/dearfriend.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/xrpcafe.html#he20231019">
+    <title>xrp.cafe</title>
+    <link>http://web3.rabbitflowerdiary.com/xrpcafe.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/hexa_rf.html#he20231019">
+    <title>HEXA-RG</title>
+    <link>http://web3.rabbitflowerdiary.com/hexa_rf.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/hexa_rabiko.html#he20231019">
+    <title>HEXA-RABIKO</title>
+    <link>http://web3.rabbitflowerdiary.com/hexa_rabiko.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/comsa.html#he20231019">
+    <title>comsa</title>
+    <link>http://web3.rabbitflowerdiary.com/comsa.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/rarible.html#he20231019">
+    <title>Rarible</title>
+    <link>http://web3.rabbitflowerdiary.com/rarible.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/opensea.html#he20231019">
+    <title>opensea</title>
+    <link>http://web3.rabbitflowerdiary.com/opensea.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/objkt.html#he20231019">
+    <title>objkt</title>
+    <link>http://web3.rabbitflowerdiary.com/objkt.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/mynft.html#he20231019">
+    <title>その場で購入できるNFTページ</title>
+    <link>http://web3.rabbitflowerdiary.com/mynft.html</link>
+    <dc:date>2023-10-19</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20231012">
     <title>openseaで単独販売していた作品をPolygonで販売開始</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <dc:date>2023-10-12</dc:date>
     <description></description>
   </item>
 
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20231001">
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20231001">
     <title>Color Hair Girl/全28種[polygon/matic]の販売開始</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <dc:date>2023-10-01</dc:date>
     <description></description>
   </item>
 
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20230928">
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230928">
     <title>Halloween#01[polygon/matic]の販売開始</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <dc:date>2023-09-28</dc:date>
     <description></description>
   </item>
 
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20230924">
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
     <title>Rabbit Autumn[polygon/matic]の販売開始</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <dc:date>2023-09-24</dc:date>
     <description></description>
   </item>
 
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20230924">
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
     <title>Rabbit Autumn Forest[polygon/WETH]の販売開始</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
-    <dc:date>2023-09-24</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://rabbitflower.html.xdomain.jp/index.html#he20230924">
-    <title>サイトをオープンしました</title>
-    <link>http://rabbitflower.html.xdomain.jp/index.html</link>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <dc:date>2023-09-24</dc:date>
     <description></description>
   </item>

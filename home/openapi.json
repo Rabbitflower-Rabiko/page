@@ -1,0 +1,350 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "foriio",
+    "description": "We aim to make portfolio easy for everyone! Use endpoint as https://api.foriio.com",
+    "termsOfService": "https://www.foriio.com/terms-of-use",
+    "contact": {
+      "email": "devs@foriio.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0",
+    "x-logo": {
+      "url": "https://foriio.imgix.net/public/h79y8vXS35aJ_1669279985-",
+      "backgroundColor": "#FFFFFF",
+      "altText": "foriio logo"
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Foriio",
+    "url": "http://foriio.com"
+  },
+  "servers": [
+    {
+      "url": "https://api.foriio.com"
+    }
+  ],
+  "paths": {
+    "/api/v1/developer/works": {
+      "get": {
+        "tags": [
+          "works"
+        ],
+        "summary": "Returns user public fworks",
+        "operationId": "works",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Current Page",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "default": 1
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "Number of works in current page",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "default": 50
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Category name for filtering works",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "default": "logo design"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArrayOfWorks"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthenticationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+              "123"
+            ]
+          }
+        ]
+      }
+    },
+    "/api/v1/developer/users": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Returns user public information",
+        "operationId": "users",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/inline_response_200"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthenticationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+              "123"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Work": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "title": {
+            "type": "string",
+            "example": "image 13"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "thumbnail_id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 11
+          },
+          "notes_count": {
+            "type": "integer",
+            "example": 0
+          },
+          "decription": {
+            "type": "string",
+            "example": "sample work"
+          },
+          "published_at": {
+            "type": "string",
+            "example": "2022-11-11T11:39:22.342Z"
+          },
+          "is_nsfw": {
+            "type": "boolean",
+            "example": false
+          },
+          "author": {
+            "$ref": "#/components/schemas/User"
+          },
+          "type": {
+            "type": "string",
+            "example": "image"
+          },
+          "author_id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1543
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 2
+          },
+          "screen_name": {
+            "type": "string",
+            "example": "john"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/Profile"
+          },
+          "status": {
+            "type": "string",
+            "example": "approved"
+          },
+          "is_pro": {
+            "type": "boolean",
+            "example": true
+          }
+        }
+      },
+      "Profile": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 223
+          },
+          "name": {
+            "type": "string",
+            "example": "sample author"
+          },
+          "profession": {
+            "type": "string",
+            "example": "UI"
+          },
+          "twitter_url": {
+            "type": "string",
+            "example": "https://twitter.com/"
+          },
+          "avatar": {
+            "$ref": "#/components/schemas/Avatar"
+          }
+        }
+      },
+      "Avatar": {
+        "type": "object",
+        "properties": {
+          "thumb2x": {
+            "type": "string",
+            "example": "https://d1yy3fmo6s8c2k.cloudfront.net/store/b79bd73a723d9c0d986ba6294ead799b.jpg"
+          },
+          "thumb": {
+            "type": "string",
+            "example": "https://d1yy3fmo6s8c2k.cloudfront.net/store/7b1be39516759d5eb82d304b9c59d8a5.jpg"
+          },
+          "phone": {
+            "type": "string",
+            "example": "https://d1yy3fmo6s8c2k.cloudfront.net/store/1e69dd7c19d2b72f7fd82188f802c373.jpg"
+          }
+        }
+      },
+      "Meta": {
+        "type": "object",
+        "properties": {
+          "current_page": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "per_page": {
+            "type": "integer",
+            "format": "int64",
+            "example": 50
+          },
+          "total_pages": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "total_count": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          }
+        }
+      },
+      "AuthenticationError": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "example": 401
+          },
+          "error": {
+            "type": "string",
+            "example": "Unauthorized"
+          },
+          "exception": {
+            "$ref": "#/components/schemas/Exception"
+          }
+        }
+      },
+      "Exception": {
+        "type": "object",
+        "properties": {
+          "class": {
+            "type": "string",
+            "example": "ErrorHandler::AuthenticationError"
+          },
+          "message": {
+            "type": "string",
+            "example": "Authentication error"
+          }
+        }
+      },
+      "ArrayOfWorks": {
+        "type": "object",
+        "properties": {
+          "works": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Work"
+            }
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Meta"
+          }
+        }
+      },
+      "inline_response_200": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "token",
+        "in": "header"
+      }
+    }
+  }
+}

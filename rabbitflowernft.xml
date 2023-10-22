@@ -9,12 +9,17 @@
   <channel rdf:about="http://web3.rabbitflowerdiary.com/xml/rabbitflowernft.xml">
     <title>RabbitflowerDiaryNFT</title>
     <link>http://web3.rabbitflowerdiary.com/</link>
-    <dc:date>2023-10-19T11:24:59+09:00</dc:date>
+    <dc:date>2023-10-22T20:18:58+09:00</dc:date>
     <description>個人でNFT販売をしております</description>
     <admin:generatorAgent rdf:resource="http://www.infomaker.jp/editorlite/?v=0.93" />
     <image rdf:resource="http://web3.rabbitflowerdiary.com/images/logo.png"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rabiko/nft.html#he20231022"/>
+        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/goods.html#he20231022"/>
+        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/Journal.html#he20231022"/>
+        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/about.html#he20231022"/>
+        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/index.html#he20231022"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home/index.html#he20231019"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/dearfriend.html#he20231019"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/xrpcafe.html#he20231019"/>
@@ -25,11 +30,6 @@
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/opensea.html#he20231019"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/objkt.html#he20231019"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/mynft.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20231012"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20231001"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230928"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
       </rdf:Seq>
     </items>
   </channel>
@@ -38,6 +38,41 @@
     <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <url>http://web3.rabbitflowerdiary.com/images/logo.png</url>
   </image>
+  <item rdf:about="http://web3.rabbitflowerdiary.com/rabiko/nft.html#he20231022">
+    <title>RABIKONFT</title>
+    <link>http://web3.rabbitflowerdiary.com/rabiko/nft.html</link>
+    <dc:date>2023-10-22</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/goods.html#he20231022">
+    <title>RABIKOGOODS</title>
+    <link>https://web3.rabbitflowerdiary.com/rabiko/goods.html</link>
+    <dc:date>2023-10-22</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/Journal.html#he20231022">
+    <title>RABIKOjounal</title>
+    <link>https://web3.rabbitflowerdiary.com/rabiko/Journal.html</link>
+    <dc:date>2023-10-22</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/about.html#he20231022">
+    <title>RABIKOabout</title>
+    <link>https://web3.rabbitflowerdiary.com/rabiko/about.html</link>
+    <dc:date>2023-10-22</dc:date>
+    <description></description>
+  </item>
+
+  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/index.html#he20231022">
+    <title>RABIKOpage</title>
+    <link>https://web3.rabbitflowerdiary.com/rabiko/index.html</link>
+    <dc:date>2023-10-22</dc:date>
+    <description></description>
+  </item>
+
   <item rdf:about="http://web3.rabbitflowerdiary.com/home/index.html#he20231019">
     <title>MYpage</title>
     <link>http://web3.rabbitflowerdiary.com/home/index.html</link>
@@ -105,41 +140,6 @@
     <title>その場で購入できるNFTページ</title>
     <link>http://web3.rabbitflowerdiary.com/mynft.html</link>
     <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20231012">
-    <title>openseaで単独販売していた作品をPolygonで販売開始</title>
-    <link>http://web3.rabbitflowerdiary.com/index.html</link>
-    <dc:date>2023-10-12</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20231001">
-    <title>Color Hair Girl/全28種[polygon/matic]の販売開始</title>
-    <link>http://web3.rabbitflowerdiary.com/index.html</link>
-    <dc:date>2023-10-01</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230928">
-    <title>Halloween#01[polygon/matic]の販売開始</title>
-    <link>http://web3.rabbitflowerdiary.com/index.html</link>
-    <dc:date>2023-09-28</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
-    <title>Rabbit Autumn[polygon/matic]の販売開始</title>
-    <link>http://web3.rabbitflowerdiary.com/index.html</link>
-    <dc:date>2023-09-24</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
-    <title>Rabbit Autumn Forest[polygon/WETH]の販売開始</title>
-    <link>http://web3.rabbitflowerdiary.com/index.html</link>
-    <dc:date>2023-09-24</dc:date>
     <description></description>
   </item>
 

@@ -3415,3 +3415,25 @@ input, select, textarea {
 	}
   }
  
+/*画像重ね*/
+.layer {/*親div*/
+	position: relative;/*相対配置*/
+	}
+  
+  .layer p {
+	position: absolute;/*絶対配置*/
+	color: rgb(61, 36, 36);/*文字は白に*/
+	font-weight: bold; /*太字に*/
+  font-size: 1.3em;/*サイズ2倍*/
+  font-family :Quicksand, ;/*Google Font*/
+	top: -0px;
+	left: 0;
+	top: -2300%;
+	left: 18%;
+	
+
+	}
+  
+  .layer img {
+	width: 100%;
+	}

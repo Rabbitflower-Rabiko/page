@@ -83,3 +83,4 @@ $(function() {
 		$('.openclose').not(this).next().slideUp();
 	});
 });
+

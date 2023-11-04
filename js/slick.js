@@ -8,3 +8,4 @@ $('.mainimg-slick').slick({
 	autoplaySpeed: 4000,	//切り替えのスピード。デフォルトは3000。
 	pauseOnHover: false,	//マウスオン時にスライドショーをストップするか。
 });
+

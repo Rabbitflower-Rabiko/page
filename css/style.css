@@ -1019,3 +1019,52 @@ footer .pr {display: block;}
   opacity:1;
   margin-top:-0.5em;
 }
+
+/*ボタン*/
+a.bt-samp72 {
+	display: block;
+	height: 40px;
+	width: 80%;
+	padding:1px;
+	text-decoration: none;
+	line-height: 40px;
+	color: #fff;
+	font-size:16px;
+	text-shadow: 0px -1px 0px #af0161;
+	background: #fff;
+	border: 1px solid #fa4cb2;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px #ccc;
+	-moz-box-shadow: 1px 1px 2px #ccc;
+	box-shadow: 1px 1px 2px #ccc;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+  }
+  a.bt-samp72 span{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: #fa4cb2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fd97d3), to(#fa4cb2));
+	background: -moz-linear-gradient(top,  #fd97d3,  #fa4cb2);
+	background: -o-linear-gradient(top,  #fd97d3,  #fa4cb2);
+	background: -ms-linear-gradient(top,  #fd97d3,  #fa4cb2);
+	background: linear-gradient(top,  #fd97d3,  #fa4cb2);
+	border-radius: 5px;
+  }
+  a.bt-samp72:hover{
+	opacity: 0.8;
+  }
+  a.bt-samp72:active{  /* クリックした時 */
+	-ms-transform: translateY(2px);
+	-webkit-transform: translateY(2px);
+	transform: translateY(2px);
+	box-shadow: none;
+  }
+
+ 
+  

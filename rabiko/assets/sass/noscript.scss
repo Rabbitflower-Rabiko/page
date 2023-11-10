@@ -6,18 +6,25 @@
 @import 'libs/html-grid';
 
 /*
-	Phantom by HTML5 UP
+	Helios by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Tiles */
+/* Carousel */
 
-	.tiles {
-		body.is-preload & {
-			article {
-				@include vendor('transform', 'none');
-				opacity: 1;
+	.carousel {
+		overflow-x: auto;
+	}
+
+/* Header */
+
+	body.homepage {
+		&.is-preload {
+			#header {
+				&:after {
+					opacity: 0;
+				}
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 /*
-	Phantom by HTML5 UP
+	Helios by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -7,16 +7,25 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body');
+		$body = $('body'),
+		settings = {
+
+			// Carousels
+				carousels: {
+					speed: 4,
+					fadeIn: true,
+					fadeDelay: 250
+				},
+
+		};
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
+			wide:      [ '1281px',  '1680px' ],
+			normal:    [ '961px',   '1280px' ],
+			narrow:    [ '841px',   '960px'  ],
+			narrower:  [ '737px',   '840px'  ],
+			mobile:    [ null,      '736px'  ]
 		});
 
 	// Play initial animations on page load.
@@ -26,160 +35,183 @@
 			}, 100);
 		});
 
-	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
+	// Dropdowns.
+		$('#nav > ul').dropotron({
+			mode: 'fade',
+			speed: 350,
+			noOpenerFade: true,
+			alignment: 'center'
+		});
 
-	// Forms.
-		var $form = $('form');
+	// Scrolly.
+		$('.scrolly').scrolly();
 
-		// Auto-resizing textareas.
-			$form.find('textarea').each(function() {
+	// Nav.
 
-				var $this = $(this),
-					$wrapper = $('<div class="textarea-wrapper"></div>'),
-					$submits = $this.find('input[type="submit"]');
+		// Button.
+			$(
+				'<div id="navButton">' +
+					'<a href="#navPanel" class="toggle"></a>' +
+				'</div>'
+			)
+				.appendTo($body);
 
-				$this
-					.wrap($wrapper)
-					.attr('rows', 1)
-					.css('overflow', 'hidden')
-					.css('resize', 'none')
-					.on('keydown', function(event) {
+		// Panel.
+			$(
+				'<div id="navPanel">' +
+					'<nav>' +
+						$('#nav').navList() +
+					'</nav>' +
+				'</div>'
+			)
+				.appendTo($body)
+				.panel({
+					delay: 500,
+					hideOnClick: true,
+					hideOnSwipe: true,
+					resetScroll: true,
+					resetForms: true,
+					target: $body,
+					visibleClass: 'navPanel-visible'
+				});
 
-						if (event.keyCode == 13
-						&&	event.ctrlKey) {
+	// Carousels.
+		$('.carousel').each(function() {
 
-							event.preventDefault();
-							event.stopPropagation();
+			var	$t = $(this),
+				$forward = $('<span class="forward"></span>'),
+				$backward = $('<span class="backward"></span>'),
+				$reel = $t.children('.reel'),
+				$items = $reel.children('article');
 
-							$(this).blur();
+			var	pos = 0,
+				leftLimit,
+				rightLimit,
+				itemWidth,
+				reelWidth,
+				timerId;
+
+			// Items.
+				if (settings.carousels.fadeIn) {
+
+					$items.addClass('loading');
+
+					$t.scrollex({
+						mode: 'middle',
+						top: '-20vh',
+						bottom: '-20vh',
+						enter: function() {
+
+							var	timerId,
+								limit = $items.length - Math.ceil($window.width() / itemWidth);
+
+							timerId = window.setInterval(function() {
+								var x = $items.filter('.loading'), xf = x.first();
+
+								if (x.length <= limit) {
+
+									window.clearInterval(timerId);
+									$items.removeClass('loading');
+									return;
+
+								}
+
+								xf.removeClass('loading');
+
+							}, settings.carousels.fadeDelay);
 
 						}
+					});
 
+				}
+
+			// Main.
+				$t._update = function() {
+					pos = 0;
+					rightLimit = (-1 * reelWidth) + $window.width();
+					leftLimit = 0;
+					$t._updatePos();
+				};
+
+				$t._updatePos = function() { $reel.css('transform', 'translate(' + pos + 'px, 0)'); };
+
+			// Forward.
+				$forward
+					.appendTo($t)
+					.hide()
+					.mouseenter(function(e) {
+						timerId = window.setInterval(function() {
+							pos -= settings.carousels.speed;
+
+							if (pos <= rightLimit)
+							{
+								window.clearInterval(timerId);
+								pos = rightLimit;
+							}
+
+							$t._updatePos();
+						}, 10);
 					})
-					.on('blur focus', function() {
-						$this.val($.trim($this.val()));
+					.mouseleave(function(e) {
+						window.clearInterval(timerId);
+					});
+
+			// Backward.
+				$backward
+					.appendTo($t)
+					.hide()
+					.mouseenter(function(e) {
+						timerId = window.setInterval(function() {
+							pos += settings.carousels.speed;
+
+							if (pos >= leftLimit) {
+
+								window.clearInterval(timerId);
+								pos = leftLimit;
+
+							}
+
+							$t._updatePos();
+						}, 10);
 					})
-					.on('input blur focus --init', function() {
+					.mouseleave(function(e) {
+						window.clearInterval(timerId);
+					});
 
-						$wrapper
-							.css('height', $this.height());
+			// Init.
+				$window.on('load', function() {
 
-						$this
-							.css('height', 'auto')
-							.css('height', $this.prop('scrollHeight') + 'px');
+					reelWidth = $reel[0].scrollWidth;
 
-					})
-					.on('keyup', function(event) {
+					if (browser.mobile) {
 
-						if (event.keyCode == 9)
-							$this
-								.select();
+						$reel
+							.css('overflow-y', 'hidden')
+							.css('overflow-x', 'scroll')
+							.scrollLeft(0);
+						$forward.hide();
+						$backward.hide();
 
-					})
-					.triggerHandler('--init');
+					}
+					else {
 
-				// Fix.
-					if (browser.name == 'ie'
-					||	browser.mobile)
-						$this
-							.css('max-height', '10em')
-							.css('overflow-y', 'auto');
+						$reel
+							.css('overflow', 'visible')
+							.scrollLeft(0);
+						$forward.show();
+						$backward.show();
 
-			});
+					}
 
-	// Menu.
-		var $menu = $('#menu');
+					$t._update();
 
-		$menu.wrapInner('<div class="inner"></div>');
+					$window.on('resize', function() {
+						reelWidth = $reel[0].scrollWidth;
+						$t._update();
+					}).trigger('resize');
 
-		$menu._locked = false;
+				});
 
-		$menu._lock = function() {
-
-			if ($menu._locked)
-				return false;
-
-			$menu._locked = true;
-
-			window.setTimeout(function() {
-				$menu._locked = false;
-			}, 350);
-
-			return true;
-
-		};
-
-		$menu._show = function() {
-
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
-
-		};
-
-		$menu._hide = function() {
-
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
-
-		};
-
-		$menu._toggle = function() {
-
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
-
-		};
-
-		$menu
-			.appendTo($body)
-			.on('click', function(event) {
-				event.stopPropagation();
-			})
-			.on('click', 'a', function(event) {
-
-				var href = $(this).attr('href');
-
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-				// Redirect.
-					if (href == '#menu')
-						return;
-
-					window.setTimeout(function() {
-						window.location.href = href;
-					}, 350);
-
-			})
-			.append('<a class="close" href="#menu">Close</a>');
-
-		$body
-			.on('click', 'a[href="#menu"]', function(event) {
-
-				event.stopPropagation();
-				event.preventDefault();
-
-				// Toggle.
-					$menu._toggle();
-
-			})
-			.on('click', function(event) {
-
-				// Hide.
-					$menu._hide();
-
-			})
-			.on('keydown', function(event) {
-
-				// Hide on escape.
-					if (event.keyCode == 27)
-						$menu._hide();
-
-			});
+		});
 
 })(jQuery);

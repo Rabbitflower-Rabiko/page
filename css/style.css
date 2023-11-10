@@ -1066,4 +1066,13 @@ a.bt-samp72 {
 	box-shadow: none;
   }
 
- 
+ /*スライド*/
+ .slide-show{
+	position: relative; /*子要素の起点*/
+	margin: 0 auto; /*中央配置*/
+	width: 600px; /*任意の幅*/
+	height: 300px; /*任意の高さ*/
+	overflow: hidden; /*外側要素の非表示*/
+  }
+   
+  

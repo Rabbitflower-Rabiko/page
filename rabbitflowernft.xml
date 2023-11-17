@@ -9,27 +9,23 @@
   <channel rdf:about="http://web3.rabbitflowerdiary.com/xml/rabbitflowernft.xml">
     <title>RabbitflowerDiaryNFT</title>
     <link>http://web3.rabbitflowerdiary.com/</link>
-    <dc:date>2023-11-04T13:32:47+09:00</dc:date>
+    <dc:date>2023-11-16T21:27:14+09:00</dc:date>
     <description>個人でNFT販売をしております</description>
     <admin:generatorAgent rdf:resource="http://www.infomaker.jp/editorlite/?v=0.93" />
     <image rdf:resource="http://web3.rabbitflowerdiary.com/images/logo.png"/>
     <items>
       <rdf:Seq>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/#he20231104"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/ShineHopeRabbit.html#he20231104"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home/index.html#he20231023"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rabiko/nft.html#he20231022"/>
-        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/goods.html#he20231022"/>
-        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/Journal.html#he20231022"/>
-        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/about.html#he20231022"/>
-        <rdf:li rdf:resource="https://web3.rabbitflowerdiary.com/rabiko/index.html#he20231022"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home/index.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/dearfriend.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/xrpcafe.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/hexa_rf.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/hexa_rabiko.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/comsa.html#he20231019"/>
-        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rarible.html#he20231019"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/jounal2023.html#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/Journal.html#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rabiko/about#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/rabiko#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/link.html#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/about.html#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20231104"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/#he20231116"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/index.html#he20230924"/>
       </rdf:Seq>
     </items>
   </channel>
@@ -38,108 +34,80 @@
     <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <url>http://web3.rabbitflowerdiary.com/images/logo.png</url>
   </image>
-  <item rdf:about="http://web3.rabbitflowerdiary.com/#he20231104">
-    <title>Shop</title>
+  <item rdf:about="http://web3.rabbitflowerdiary.com/home#he20231116">
+    <title>RabbitflowerHome</title>
+    <link>http://web3.rabbitflowerdiary.com/home</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>らびフラトップ</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/jounal2023.html#he20231116">
+    <title>Rabiko2023</title>
+    <link>http://web3.rabbitflowerdiary.com/jounal2023.html</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>らびこ記録2023年</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/Journal.html#he20231116">
+    <title>RabikoJournal</title>
+    <link>http://web3.rabbitflowerdiary.com/Journal.html</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>らびこ記録</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/rabiko/about#he20231116">
+    <title>RabikoAbout</title>
+    <link>http://web3.rabbitflowerdiary.com/rabiko/about</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>らびこについて</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/rabiko#he20231116">
+    <title>RabikoTop</title>
+    <link>http://web3.rabbitflowerdiary.com/rabiko</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>らびこトップ</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/link.html#he20231116">
+    <title>Shoplink</title>
+    <link>http://web3.rabbitflowerdiary.com/link.html</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>NFTリンク</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/about.html#he20231116">
+    <title>ShopAbout</title>
+    <link>http://web3.rabbitflowerdiary.com/about.html</link>
+    <dc:date>2023-11-16</dc:date>
+    <description>NFTについて</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20231104">
+    <title>Shoptop</title>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
+    <dc:date>2023-11-04</dc:date>
+    <description>お店のトップ</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/#he20231116">
+    <title>ShopTop</title>
     <link>http://web3.rabbitflowerdiary.com/</link>
-    <dc:date>2023-11-04</dc:date>
+    <dc:date>2023-11-16</dc:date>
+    <description>お店のトップ</description>
+  </item>
+
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
+    <title>Rabbit Autumn Forest[polygon/WETH]の販売開始</title>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
+    <dc:date>2023-09-24</dc:date>
     <description></description>
   </item>
 
-  <item rdf:about="http://web3.rabbitflowerdiary.com/ShineHopeRabbit.html#he20231104">
-    <title>ShineHopeRabbit</title>
-    <link>http://web3.rabbitflowerdiary.com/ShineHopeRabbit.html</link>
-    <dc:date>2023-11-04</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/home/index.html#he20231023">
-    <title>MYBlog</title>
-    <link>http://web3.rabbitflowerdiary.com/home/index.html</link>
-    <dc:date>2023-10-23</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/rabiko/nft.html#he20231022">
-    <title>RABIKONFT</title>
-    <link>http://web3.rabbitflowerdiary.com/rabiko/nft.html</link>
-    <dc:date>2023-10-22</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/goods.html#he20231022">
-    <title>RABIKOGOODS</title>
-    <link>https://web3.rabbitflowerdiary.com/rabiko/goods.html</link>
-    <dc:date>2023-10-22</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/Journal.html#he20231022">
-    <title>RABIKOjounal</title>
-    <link>https://web3.rabbitflowerdiary.com/rabiko/Journal.html</link>
-    <dc:date>2023-10-22</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/about.html#he20231022">
-    <title>RABIKOabout</title>
-    <link>https://web3.rabbitflowerdiary.com/rabiko/about.html</link>
-    <dc:date>2023-10-22</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="https://web3.rabbitflowerdiary.com/rabiko/index.html#he20231022">
-    <title>RABIKOpage</title>
-    <link>https://web3.rabbitflowerdiary.com/rabiko/index.html</link>
-    <dc:date>2023-10-22</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/home/index.html#he20231019">
-    <title>MYpage</title>
-    <link>http://web3.rabbitflowerdiary.com/home/index.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/dearfriend.html#he20231019">
-    <title>dearfriend</title>
-    <link>http://web3.rabbitflowerdiary.com/dearfriend.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/xrpcafe.html#he20231019">
-    <title>xrp.cafe</title>
-    <link>http://web3.rabbitflowerdiary.com/xrpcafe.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/hexa_rf.html#he20231019">
-    <title>HEXA-RG</title>
-    <link>http://web3.rabbitflowerdiary.com/hexa_rf.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/hexa_rabiko.html#he20231019">
-    <title>HEXA-RABIKO</title>
-    <link>http://web3.rabbitflowerdiary.com/hexa_rabiko.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/comsa.html#he20231019">
-    <title>comsa</title>
-    <link>http://web3.rabbitflowerdiary.com/comsa.html</link>
-    <dc:date>2023-10-19</dc:date>
-    <description></description>
-  </item>
-
-  <item rdf:about="http://web3.rabbitflowerdiary.com/rarible.html#he20231019">
-    <title>Rarible</title>
-    <link>http://web3.rabbitflowerdiary.com/rarible.html</link>
-    <dc:date>2023-10-19</dc:date>
+  <item rdf:about="http://web3.rabbitflowerdiary.com/index.html#he20230924">
+    <title>サイトをオープンしました</title>
+    <link>http://web3.rabbitflowerdiary.com/index.html</link>
+    <dc:date>2023-09-24</dc:date>
     <description></description>
   </item>
 

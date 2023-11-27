@@ -9,12 +9,13 @@
   <channel rdf:about="http://web3.rabbitflowerdiary.com/xml/rabbitflowernft.xml">
     <title>RabbitflowerDiaryNFT</title>
     <link>http://web3.rabbitflowerdiary.com/</link>
-    <dc:date>2023-11-16T21:27:14+09:00</dc:date>
+    <dc:date>2023-11-27T17:13:39+09:00</dc:date>
     <description>個人でNFT販売をしております</description>
     <admin:generatorAgent rdf:resource="http://www.infomaker.jp/editorlite/?v=0.93" />
     <image rdf:resource="http://web3.rabbitflowerdiary.com/images/logo.png"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/works/sorbet.html#he20231127"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/home#he20231116"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/jounal2023.html#he20231116"/>
         <rdf:li rdf:resource="http://web3.rabbitflowerdiary.com/Journal.html#he20231116"/>
@@ -34,6 +35,13 @@
     <link>http://web3.rabbitflowerdiary.com/index.html</link>
     <url>http://web3.rabbitflowerdiary.com/images/logo.png</url>
   </image>
+  <item rdf:about="http://web3.rabbitflowerdiary.com/works/sorbet.html#he20231127">
+    <title>Sorbetの販売ページ</title>
+    <link>http://web3.rabbitflowerdiary.com/works/sorbet.html</link>
+    <dc:date>2023-11-27</dc:date>
+    <description>sorbet</description>
+  </item>
+
   <item rdf:about="http://web3.rabbitflowerdiary.com/home#he20231116">
     <title>RabbitflowerHome</title>
     <link>http://web3.rabbitflowerdiary.com/home</link>

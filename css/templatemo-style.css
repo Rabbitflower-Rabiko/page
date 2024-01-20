@@ -900,3 +900,66 @@ blockquote cite {
   text-align: center;
   color: #808080;
 }
+
+
+
+import {
+  ThirdwebProvider,
+  ConnectWallet,
+  metamaskWallet,
+  coinbaseWallet,
+  walletConnect,
+  localWallet,
+  embeddedWallet,
+  lightTheme,
+} from "@thirdweb-dev/react";
+
+export default function App() {
+  return (
+    <ThirdwebProvider
+      activeChain="mumbai"
+      clientId="5a4e1a41cb679baaa5fe7b2498ff32e4"
+      locale={en()}
+      supportedWallets={[
+        metamaskWallet({ recommended: true }),
+        coinbaseWallet(),
+        walletConnect({ recommended: true }),
+        localWallet(),
+        embeddedWallet({
+          auth: {
+            options: [
+              "email",
+              "google",
+              "apple",
+              "facebook",
+            ],
+          },
+        }),
+      ]}
+    >
+      <ConnectWallet
+        theme={lightTheme({
+          colors: {
+            accentText: "#ff4d70",
+            accentButtonBg: "#fd4e71",
+            primaryText: "#602030",
+            secondaryText: "#954f0e",
+            primaryButtonBg: "#3e2965",
+            secondaryButtonText: "#302447",
+          },
+        })}
+        modalSize={"compact"}
+        welcomeScreen={{
+          img: {
+            src: "https://web3.rabbitflowerdiary.com/img/pngicon2.png",
+            width: 150,
+            height: 150,
+          },
+        }}
+        modalTitleIconUrl={
+          "https://web3.rabbitflowerdiary.com/img/pngicon2.png"
+        }
+      />
+    </ThirdwebProvider>
+  );
+}
